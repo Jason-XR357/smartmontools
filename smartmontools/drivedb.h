@@ -148,6 +148,25 @@ const drive_settings builtin_knowndrives[] = {
     //  251-253 Unknown_Attribute
     "-v 254,raw48,Free_Fall_Sensor,HDD"
   },
+  { "Advantech Industrial SSD",
+    "SQF-S25V1-.+",
+    "", "",
+    "-v 14,raw48,Device_Capacity "
+    "-v 15,raw48,User_Capacity "
+    "-v 16,raw48,Spare_Blocks_Initial "
+    "-v 17,raw48,Spare_Blocks_Remaining "
+    "-v 100,raw48,Total_Erase_Count "
+    "-v 168,raw48,SATA_PHY_Error_Count "
+    "-v 170,raw24/raw32,Bad_Block_count "
+    "-v 173,raw16(raw16),Erase_count "
+    "-v 174,raw48,Unexpected_Power_Loss "
+    "-v 175,hex48,PF_Protection_Status "
+    "-v 202,raw16,Percent_Life_Used "
+    "-v 218,raw48,CRC_error "
+    "-v 231,raw16,Percent_Life_Left "
+    "-v 234,raw48,Total_NAND_Read "
+    "-v 235,raw48,Total_NAND_Written "
+  },
   { "Swissbit C440 Industrial CompactFlash Card",
     // spec v1.23 found at http://www.farnell.com/datasheets/1821167.pdf
     // tested with SFCF4096H2BU4TO-I-MS-527-STD
